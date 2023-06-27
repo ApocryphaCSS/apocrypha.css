@@ -1,0 +1,58 @@
+@use "sass:color";
+
+$font-default: monospace !default;
+
+$background: black !default;
+$foreground: lightgray !default;
+
+$accent-primary: cyan !default;
+$accent-success: lightgreen !default;
+$accent-warn: goldenrod !default;
+$accent-error: crimson !default;
+
+$link-color: $accent-primary !default;
+$link-color-hover: unset !default;
+$link-bg-hover-transparency: 85% !default;
+
+$corner-radius: 0 !default;
+
+:root {
+  --font-default: #{$font-default};
+
+  --background: #{$background};
+  --foreground: #{$foreground};
+
+  --accent-primary: #{$accent-primary};
+  --accent-success: #{$accent-success};
+  --accent-warn: #{$accent-warn};
+  --accent-error: #{$accent-error};
+
+  --link-color: #{$link-color};
+
+  @if $link-color-hover == unset {
+    --link-color-hover: #{color.scale($link-color, $lightness: 75%, $saturation: -25%)};
+  } @else {
+    --link-color-hover: #{$link-color-hover};
+  }
+
+  --corner-radius: #{$corner-radius};
+}
+
+a {
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-color-hover);
+
+    @if $link-color-hover == unset {
+      background-color: color.scale(
+        $link-color,
+        $lightness: 75%,
+        $saturation: -25%,
+        $alpha: -$link-bg-hover-transparency
+      );
+    } @else {
+      background-color: color.scale($link-color-hover, $alpha: -$link-bg-hover-transparency);
+    }
+  }
+}

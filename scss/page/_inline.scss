@@ -1,0 +1,21 @@
+/**
+ * Contains styling for inline tags as defined in the following section:
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics
+ */
+
+@import "../options";
+
+a {
+  font-size: 1rem;
+
+  @if $use-bracket-link {
+    text-decoration: none;
+
+    &::before {
+      content: "[";
+    }
+    &::after {
+      content: "]";
+    }
+  }
+}

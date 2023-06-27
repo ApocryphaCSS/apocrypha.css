@@ -1,0 +1,28 @@
+{
+  "name": "@braveesnow/apocrypha",
+  "version": "1.0.0",
+  "description": "A minimalist, customizable SCSS framework",
+  "main": "css/apocrypha.min.css",
+  "scripts": {
+    "prepare:scss": "sass --no-error-css --no-source-map scss/:css/",
+    "test:scss": "nodemon --watch scss/ --ext scss --exec pnpm prepare:scss",
+    "prepublish:css-minify": "cleancss -o css/apocrypha.min.css css/apocrypha.css"
+  },
+  "keywords": [
+    "css",
+    "customizable",
+    "minimal",
+    "scss"
+  ],
+  "author": "BraveeSnow",
+  "license": "LGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "gitlab:BraveeSnow/apocrypha.css"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "nodemon": "^2.0.22",
+    "sass": "^1.63.6"
+  }
+}
