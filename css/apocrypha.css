@@ -8,7 +8,13 @@
   --accent-error: crimson;
   --link-color: cyan;
   --link-color-hover: #c7f7f7;
-  --corner-radius: 0;
+  --corner-radius: 0.5rem;
+}
+
+::selection,
+::-moz-selection {
+  color: var(--background);
+  background-color: var(--accent-primary);
 }
 
 a {
@@ -17,6 +23,46 @@ a {
 a:hover {
   color: var(--link-color-hover);
   background-color: rgba(199, 247, 247, 0.15);
+}
+
+/**
+ * Contains styling for inline tags as defined in the following section:
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms
+ */
+button {
+  all: unset;
+  background: var(--background);
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--accent-primary);
+  cursor: pointer;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+}
+button:hover {
+  background-color: var(--accent-primary);
+  color: var(--background);
+}
+
+form {
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+input {
+  all: unset;
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--foreground);
+  display: block;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
 /**
@@ -102,6 +148,27 @@ p {
   font-size: 1rem;
 }
 
+.container {
+  margin: 0 6rem;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+a {
+  transition: background-color 0.1s, color 0.1s;
+}
+
+button {
+  transition: background-color 0.25s, color 0.25s;
+}
+
 nav.navbar {
   align-items: center;
   border-bottom: thin solid var(--accent-primary);
@@ -124,7 +191,6 @@ nav.navbar > h1 {
 nav.navbar > button {
   background: transparent;
   border: none;
-  cursor: pointer;
   height: 1rem;
   padding: 0;
 }
@@ -159,4 +225,19 @@ nav.navbar > ul > li {
   nav.navbar > ul > li + li {
     margin-left: 1.5rem;
   }
+}
+div.progress-bar {
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  display: flex;
+  padding: 0.25rem;
+  margin: 1rem;
+}
+div.progress-bar > span {
+  background-color: var(--accent-primary);
+  border-radius: var(--corner-radius);
+  height: 1rem;
+}
+div.progress-bar > span.thin {
+  height: 0.5rem;
 }

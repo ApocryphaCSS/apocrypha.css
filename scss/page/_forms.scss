@@ -1,0 +1,43 @@
+/**
+ * Contains styling for inline tags as defined in the following section:
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms
+ */
+
+button {
+  all: unset;
+
+  background: var(--background);
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--accent-primary);
+  cursor: pointer;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 0.5rem 0.75rem;
+
+  &:hover {
+    background-color: var(--accent-primary);
+    color: var(--background);
+  }
+}
+
+form {
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+input {
+  all: unset;
+
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--foreground);
+  display: block;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}

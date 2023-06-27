@@ -1,2 +1,5 @@
-// Allows surrounding <a> tags with square brackets.
+// Allows surrounding <a> tag content with square brackets.
 $use-bracket-link: true !default;
+
+// Enables bundled animations.
+$enable-animations: true !default;

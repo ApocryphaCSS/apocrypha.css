@@ -14,7 +14,7 @@ $link-color: $accent-primary !default;
 $link-color-hover: unset !default;
 $link-bg-hover-transparency: 85% !default;
 
-$corner-radius: 0 !default;
+$corner-radius: 0.5rem !default;
 
 :root {
   --font-default: #{$font-default};
@@ -36,6 +36,12 @@ $corner-radius: 0 !default;
   }
 
   --corner-radius: #{$corner-radius};
+}
+
+::selection,
+::-moz-selection {
+  color: var(--background);
+  background-color: var(--accent-primary);
 }
 
 a {

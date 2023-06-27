@@ -1,9 +1,18 @@
 @import "internal/theme";
 
 // Common styles
+@import "page/forms";
 @import "page/inline";
 @import "page/sectioning";
 @import "page/text";
 
+// Layout styles
+@import "layout/containers";
+@import "layout/utilities";
+
+// Animations
+@import "animations/hover";
+
 // Class component styles
 @import "components/navbar";
+@import "components/progress_bar";
