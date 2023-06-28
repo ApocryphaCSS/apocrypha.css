@@ -23,6 +23,7 @@ nav.navbar {
     background: transparent;
     border: none;
     height: 1rem;
+    margin: 0;
     padding: 0;
 
     > img {
@@ -61,7 +62,7 @@ nav.navbar {
         margin: 0;
 
         & + li {
-          margin-left: 1.5rem;
+          margin-left: 0.5rem;
         }
       }
     }

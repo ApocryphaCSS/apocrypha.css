@@ -1,11 +1,20 @@
+/**
+ * Default animations bundled with apocrypha.css.
+ */
+
 @import "../options";
 
 @if $enable-animations {
   a {
     transition: background-color 0.1s, color 0.1s;
   }
-  
+
+  a::before,
+  a::after {
+    transition: transform 0.1s;
+  }
+
   button {
-    transition: background-color 0.25s, color 0.25s;
+    transition: background-color 0.1s, color 0.1s;
   }
 }

@@ -7,15 +7,25 @@
 
 a {
   font-size: 1rem;
+  padding: 0 0.5rem;
 
   @if $use-bracket-link {
     text-decoration: none;
 
     &::before {
       content: "[";
+      display: inline-block;
     }
     &::after {
       content: "]";
+      display: inline-block;
+    }
+
+    &:hover::before {
+      transform: translateX(-0.5rem);
+    }
+    &:hover::after {
+      transform: translateX(0.5rem);
     }
   }
 }
