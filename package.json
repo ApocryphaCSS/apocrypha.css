@@ -1,5 +1,5 @@
 {
-  "name": "@braveesnow/apocrypha",
+  "name": "@apocrypha/core",
   "version": "0.1.0",
   "description": "A minimalist, customizable SCSS framework",
   "main": "css/apocrypha.min.css",
