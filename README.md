@@ -37,4 +37,4 @@ link it in your HTML `<head>` block like so:
 If you want to use apocrypha.css in your project, it is available to you on the
 npm repository. Run the command below to add it to your project:
 
-`npm install @apocrypha/core`
+`npm install -D @apocrypha/core`
