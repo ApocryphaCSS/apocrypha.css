@@ -21,3 +21,20 @@ Below are a list of features that apocrypha.css provides:
 ## Preview
 
 A front-end website will be available soon!
+
+## Try it out
+
+Wanna try out apocrypha.css? No need for using any package manager, you can
+link it in your HTML `<head>` block like so:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@apocrypha/core/css/apocrypha.min.css"
+/>
+```
+
+If you want to use apocrypha.css in your project, it is available to you on the
+npm repository. Run the command below to add it to your project:
+
+`npm install @apocrypha/core`
