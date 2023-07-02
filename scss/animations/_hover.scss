@@ -9,9 +9,12 @@
     transition: background-color 0.1s, color 0.1s;
   }
 
-  a::before,
-  a::after {
-    transition: transform 0.1s;
+  @if $use-bracket-link {
+    a::before,
+    a::after {
+      padding: 0 0.5rem;
+      transition: transform 0.1s;
+    }
   }
 
   button {

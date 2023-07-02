@@ -1,0 +1,23 @@
+@mixin doc-section {
+  border-radius: var(--corner-radius);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+section.note {
+  @include doc-section;
+  background: var(--accent-note-bg);
+  border: thin solid var(--accent-note);
+}
+
+section.warning {
+  @include doc-section;
+  background: var(--accent-warn-bg);
+  border: thin solid var(--accent-warn);
+}
+
+section.error {
+  @include doc-section;
+  background: var(--accent-error-bg);
+  border: thin solid var(--accent-error);
+}

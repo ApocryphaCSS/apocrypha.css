@@ -1,8 +1,44 @@
+/* Page Content Management */
+
 .center {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .center-text {
-  text-align: center;
+  text-align: center !important;
+}
+
+.scroll {
+  overflow: scroll !important;
+}
+
+.scroll-x {
+  overflow-x: scroll !important;
+}
+
+.scroll-y {
+  overflow-y: scroll !important;
+}
+
+/* Text Styling */
+
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.color-primary {
+  color: var(--accent-primary);
+}
+
+.color-secondary {
+  color: var(--accent-secondary);
 }

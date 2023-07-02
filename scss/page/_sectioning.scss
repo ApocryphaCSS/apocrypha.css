@@ -62,5 +62,11 @@ h6 {
 }
 
 main {
-  margin: 0 10%;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    margin: 0 8rem;
+  }
 }

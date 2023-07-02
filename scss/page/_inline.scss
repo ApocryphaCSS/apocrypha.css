@@ -3,11 +3,28 @@
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics
  */
 
+@use "sass:color";
+
 @import "../options";
 
 a {
+  color: var(--link-color);
   font-size: 1rem;
-  padding: 0 0.5rem;
+
+  &:hover {
+    color: var(--link-color-hover);
+
+    @if $link-color-hover == unset {
+      background-color: color.scale(
+        $link-color,
+        $lightness: 75%,
+        $saturation: -25%,
+        $alpha: -$link-bg-hover-transparency
+      );
+    } @else {
+      background-color: color.scale($link-color-hover, $alpha: -$link-bg-hover-transparency);
+    }
+  }
 
   @if $use-bracket-link {
     text-decoration: none;
@@ -28,4 +45,10 @@ a {
       transform: translateX(0.5rem);
     }
   }
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-all;
 }

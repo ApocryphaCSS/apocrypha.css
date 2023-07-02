@@ -1,14 +1,23 @@
 @use "sass:color";
 
-$font-default: monospace !default;
+$font-default: sans-serif !default;
 
-$background: black !default;
-$foreground: lightgray !default;
+$background: #322d3f !default;
+$background-secondary: #2f2d3f !default;
+$background-tertiary: #22202c !default;
+$foreground: #fff3f2 !default;
+$red: #fd9696 !default;
+$red-bold: #c33b23 !default;
+$green: #c0faa7 !default;
+$yellow: #f9f99a !default;
+$blue: #a6f8ff !default;
 
-$accent-primary: cyan !default;
-$accent-success: lightgreen !default;
-$accent-warn: goldenrod !default;
-$accent-error: crimson !default;
+$accent-primary: $red !default;
+$accent-secondary: $yellow !default;
+$accent-success: $green !default;
+$accent-note: $blue !default;
+$accent-warn: $yellow !default;
+$accent-error: $red-bold !default;
 
 $link-color: $accent-primary !default;
 $link-color-hover: unset !default;
@@ -20,12 +29,20 @@ $corner-radius: 0.5rem !default;
   --font-default: #{$font-default};
 
   --background: #{$background};
+  --background-secondary: #{$background-secondary};
+  --background-tertiary: #{$background-tertiary};
   --foreground: #{$foreground};
 
   --accent-primary: #{$accent-primary};
+  --accent-secondary: #{$accent-secondary};
   --accent-success: #{$accent-success};
+  --accent-success-bg: #{color.scale($accent-success, $alpha: -95%)};
+  --accent-note: #{$accent-note};
+  --accent-note-bg: #{color.scale($accent-note, $alpha: -95%)};
   --accent-warn: #{$accent-warn};
+  --accent-warn-bg: #{color.scale($accent-warn, $alpha: -95%)};
   --accent-error: #{$accent-error};
+  --accent-error-bg: #{color.scale($accent-error, $alpha: -95%)};
 
   --link-color: #{$link-color};
 
@@ -40,25 +57,6 @@ $corner-radius: 0.5rem !default;
 
 ::selection,
 ::-moz-selection {
-  color: var(--background);
   background-color: var(--accent-primary);
-}
-
-a {
-  color: var(--link-color);
-
-  &:hover {
-    color: var(--link-color-hover);
-
-    @if $link-color-hover == unset {
-      background-color: color.scale(
-        $link-color,
-        $lightness: 75%,
-        $saturation: -25%,
-        $alpha: -$link-bg-hover-transparency
-      );
-    } @else {
-      background-color: color.scale($link-color-hover, $alpha: -$link-bg-hover-transparency);
-    }
-  }
+  color: var(--background-secondary);
 }

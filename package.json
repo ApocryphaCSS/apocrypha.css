@@ -4,7 +4,7 @@
   "description": "A minimalist, customizable SCSS framework",
   "main": "css/apocrypha.min.css",
   "scripts": {
-    "prepare:scss": "sass --style=compressed --no-error-css --no-source-map scss/:css/",
+    "prepare:scss": "sass --no-error-css --no-source-map scss/:css/",
     "test:scss": "nodemon --watch scss/ --ext scss --exec pnpm prepare:scss",
     "prepublish:css-minify": "cleancss -o css/apocrypha.min.css css/apocrypha.css"
   },

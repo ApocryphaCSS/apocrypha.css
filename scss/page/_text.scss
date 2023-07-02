@@ -3,6 +3,29 @@
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#text_content
  */
 
+blockquote {
+  background: var(--background-tertiary);
+  border-left: thick solid var(--accent-primary);
+  border-top-right-radius: var(--corner-radius);
+  border-bottom-right-radius: var(--corner-radius);
+  margin: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
 p {
   font-size: 1rem;
+}
+
+pre {
+  background: var(--background-secondary);
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 1rem;
+
+  * {
+    font-family: monospace;
+  }
 }

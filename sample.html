@@ -25,27 +25,55 @@
     </header>
 
     <main>
-      <h1>H1 Header</h1>
+      <h1 class="primary">H1 Header</h1>
       <h2>H2 Header</h2>
       <h3>H3 Header</h3>
       <h4>H4 Header</h4>
       <h5>H5 Header</h5>
       <h6>H6 Header</h6>
-      <p class="center-text">
-        Some centered paragraph text with an <a href="/">inline link</a>
+
+      <blockquote>
+        A blockquote of text.
+        <br />
+        With a newline.
+      </blockquote>
+
+      <section class="note">
+        This is a note block. Used for documentation or notifications.
+      </section>
+
+      <section class="warning">
+        This is a warning block. Used for documentation or notifications.
+      </section>
+
+      <section class="error">
+        This is an error block. Used for documentation or notifications.
+      </section>
+
+      <p>Here's a progress bar</p>
+      <progress max="100" value="50">50%</progress>
+
+      <pre>
+        <code>Here's some monospace code block, it's very long that it should wrap instead of overflow</code>
+        <code>  Here's an indented newline</code>
+      </pre>
+
+      <p class="center-text serif">
+        Some serif paragraph text with an <a href="/">inline link</a>
       </p>
 
       <form>
         <input type="text" />
         <textarea></textarea>
+        <select>
+          <optgroup label="Section">
+            <option selected>Option 1</option>
+            <option>Option 2</option>
+          </optgroup>
+        </select>
         <button>A button</button>
         <button>Another button</button>
       </form>
-
-      <p>Here's a progress bar</p>
-      <div class="progress-bar" style="width: 25%">
-        <span class="thin" style="width: 50%" />
-      </div>
     </main>
   </body>
 </html>

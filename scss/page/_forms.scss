@@ -1,18 +1,18 @@
 /**
  * Contains styling for inline tags as defined in the following section:
- * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms
+ * https://developer.quote.org/en-US/docs/Web/HTML/Element#forms
  */
 
-button {
-  all: unset;
+@import "../options";
 
-  background: var(--background);
+button {
+  background: var(--background-secondary);
   border: thin solid var(--accent-primary);
   border-radius: var(--corner-radius);
   color: var(--accent-primary);
   cursor: pointer;
-  font-weight: bold;
-  margin: 1rem;
+  font: bold 1rem sans-serif;
+  margin: 0.5rem;
   padding: 0.5rem 0.75rem;
 
   &:hover {
@@ -36,22 +36,82 @@ form {
 }
 
 input {
-  all: unset;
-
+  background: var(--background-secondary);
   border: thin solid var(--accent-primary);
   border-radius: var(--corner-radius);
   color: var(--foreground);
   display: block;
-  font-size: 1rem;
-  margin: 1rem;
+  font: inherit;
+  margin: 0.5rem;
   padding: 0.5rem;
 }
 
-textarea {
-  background-color: transparent;
+progress {
+  appearance: none;
+  background: var(--background-secondary);
   border: thin solid var(--accent-primary);
   border-radius: var(--corner-radius);
-  margin: 1rem;
+  padding: 0.25rem;
+  -webkit-appearance: none;
+}
+
+progress::-moz-progress-bar {
+  background: var(--accent-primary);
+  border-radius: calc(var(--corner-radius) / 2);
+}
+
+progress::-webkit-progress-bar {
+  background: var(--background-secondary);
+  border-radius: calc(var(--corner-radius) / 2);
+}
+
+progress::-webkit-progress-value {
+  background: var(--accent-primary);
+  border-radius: calc(var(--corner-radius) / 2);
+}
+
+select {
+  background: var(--background-secondary);
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--foreground);
+  font: inherit;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+optgroup {
+  font: inherit;
+}
+
+option {
+  background: var(--background-secondary);
+
+  &[selected] {
+    color: var(--accent-primary);
+  }
+}
+
+textarea {
+  background: var(--background-secondary);
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  color: var(--foreground);
+  font: inherit;
+  margin: 0.5rem;
+  padding: 0.5rem;
   resize: vertical;
   width: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  @if not $disable-focus-outline {
+    outline: solid thin var(--accent-secondary);
+    outline-offset: 0.25rem;
+  } @else {
+    outline: none;
+  }
 }
