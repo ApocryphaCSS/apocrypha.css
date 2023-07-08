@@ -1,5 +1,6 @@
 :root {
   --font-default: sans-serif;
+  --font-monospace: monospace;
   --background: #322d3f;
   --background-secondary: #2f2d3f;
   --background-tertiary: #22202c;
@@ -147,9 +148,8 @@ a:hover {
 }
 
 code {
-  display: block;
+  font-family: var(--font-monospace);
   white-space: pre-wrap;
-  word-wrap: break-all;
 }
 
 /**
@@ -166,6 +166,11 @@ html {
 
 body {
   margin: 0;
+}
+
+html,
+body {
+  height: fit-content;
 }
 
 header {
@@ -236,21 +241,15 @@ blockquote {
   padding: 0.5rem 1.5rem;
 }
 
-p {
-  font-size: 1rem;
-}
-
 pre {
   background: var(--background-secondary);
   border: thin solid var(--accent-primary);
   border-radius: var(--corner-radius);
   display: flex;
   flex-direction: column;
+  font-family: var(--font-monospace);
   height: fit-content;
   padding: 1rem;
-}
-pre * {
-  font-family: monospace;
 }
 
 .container {
@@ -354,6 +353,9 @@ nav.navbar > ul {
   margin: 0 auto;
   padding: 0;
 }
+nav.navbar > ul.active {
+  display: block;
+}
 nav.navbar > ul > li {
   list-style: none;
   margin: 1rem;
@@ -371,6 +373,9 @@ nav.navbar > ul > li {
     display: flex;
     margin: 0;
   }
+  nav.navbar > ul.active {
+    display: flex;
+  }
   nav.navbar > ul > li {
     margin: 0;
   }
@@ -384,6 +389,14 @@ section.note {
   padding: 1rem;
   background: var(--accent-note-bg);
   border: thin solid var(--accent-note);
+}
+
+section.success {
+  border-radius: var(--corner-radius);
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--accent-success-bg);
+  border: thin solid var(--accent-success);
 }
 
 section.warning {

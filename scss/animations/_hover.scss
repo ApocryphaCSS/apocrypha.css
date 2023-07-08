@@ -9,7 +9,7 @@
     transition: background-color 0.1s, color 0.1s;
   }
 
-  @if $use-bracket-link {
+  @if $enable-bracket-links {
     a::before,
     a::after {
       padding: 0 0.5rem;

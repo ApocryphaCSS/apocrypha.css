@@ -71,7 +71,7 @@ nav.navbar {
         margin: 0;
 
         & + li {
-          @if $use-bracket-link {
+          @if $enable-bracket-links {
             margin-left: 0.5rem;
           } @else {
             margin-left: 1.5rem;

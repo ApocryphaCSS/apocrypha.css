@@ -108,7 +108,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  @if not $disable-focus-outline {
+  @if $enable-focus-outline {
     outline: solid thin var(--accent-secondary);
     outline-offset: 0.25rem;
   } @else {

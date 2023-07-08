@@ -26,7 +26,7 @@ a {
     }
   }
 
-  @if $use-bracket-link {
+  @if $enable-bracket-links {
     text-decoration: none;
 
     &::before {
