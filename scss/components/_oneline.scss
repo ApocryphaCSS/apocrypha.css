@@ -1,0 +1,14 @@
+pre.oneline {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 40rem;
+  padding: 0;
+
+  code {
+    display: inline;
+    margin: 0 1rem;
+    overflow-x: auto;
+    padding: 1rem 0 0;
+    white-space: unset;
+  }
+}
