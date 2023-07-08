@@ -1,5 +1,5 @@
 /**
- * Contains styling for inline tags as defined in the following section:
+ * Contains styling for form tags as defined in the following section:
  * https://developer.quote.org/en-US/docs/Web/HTML/Element#forms
  */
 
@@ -102,6 +102,12 @@ textarea {
   padding: 0.5rem;
   resize: vertical;
   width: none;
+}
+
+fieldset {
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
+  margin-block: 0.5rem;
 }
 
 button:focus,
