@@ -21,6 +21,8 @@ Below are a list of features that apocrypha.css provides:
 ## Preview
 
 A front-end website will be available soon!
+However, [sample.html](https://raw.githubusercontent.com/ApocryphaCSS/apocrypha.css/master/sample.html) contains a
+small demonstration that can be viewed by cloning this project locally.
 
 ## Try it out
 
