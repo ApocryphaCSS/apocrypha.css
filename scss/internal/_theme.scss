@@ -1,6 +1,7 @@
 @use "sass:color";
 
 $font-default: sans-serif !default;
+$font-monospace: monospace !default;
 
 $background: #322d3f !default;
 $background-secondary: #2f2d3f !default;
@@ -29,6 +30,7 @@ $corner-radius: 0.5rem !default;
 
 :root {
   --font-default: #{$font-default};
+  --font-monospace: #{$font-monospace};
 
   --background: #{$background};
   --background-secondary: #{$background-secondary};

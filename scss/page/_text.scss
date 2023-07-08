@@ -18,10 +18,7 @@ pre {
   border-radius: var(--corner-radius);
   display: flex;
   flex-direction: column;
+  font-family: var(--font-monospace);
   height: fit-content;
   padding: 1rem;
-
-  * {
-    font-family: monospace;
-  }
 }

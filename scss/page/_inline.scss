@@ -48,7 +48,6 @@ a {
 }
 
 code {
-  display: block;
+  font-family: var(--font-monospace);
   white-space: pre-wrap;
-  word-wrap: break-all;
 }
