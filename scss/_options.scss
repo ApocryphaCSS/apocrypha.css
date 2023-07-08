@@ -1,5 +1,5 @@
 // Allows surrounding <a> tag content with square brackets.
-$use-bracket-link: false !default;
+$enable-bracket-links: false !default;
 
 // Enables bundled animations.
 $enable-animations: true !default;
@@ -7,4 +7,4 @@ $enable-animations: true !default;
 // Controls the focus outline on form elements.
 // WARNING: the focus outline exists for accessibility reasons, disable if not
 // needed.
-$disable-focus-outline: false !default;
+$enable-focus-outline: true !default;
