@@ -20,9 +20,14 @@ Below are a list of features that apocrypha.css provides:
 
 ## Preview
 
-A front-end website will be available soon!
-However, [sample.html](https://raw.githubusercontent.com/ApocryphaCSS/apocrypha.css/master/sample.html) contains a
-small demonstration that can be viewed by cloning this project locally.
+Our [website](https://apocrypha.snows.world) is now live!
+
+NOTE: Since apocrypha.css is still in an alpha stage, the website may not
+reflect the most recent changes.
+
+You can also view the [sample.html](https://raw.githubusercontent.com/ApocryphaCSS/apocrypha.css/master/sample.html)
+from the repository, which contains a small demonstration that can be viewed by
+cloning this project locally.
 
 ## Try it out
 
@@ -32,8 +37,8 @@ link it in your HTML `<head>` block like so:
 ```html
 
 <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@apocrypha/core/css/apocrypha.min.css"
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@apocrypha/core/css/apocrypha.min.css"
 />
 ```
 
@@ -44,9 +49,11 @@ npm repository. Run the command below to add it to your project:
 
 ## Manual Compilation
 
-apocrypha.css uses the [`sass`](https://www.npmjs.com/package/sass) package to compile the project's .scss files.
+apocrypha.css uses the [`sass`](https://www.npmjs.com/package/sass) package to
+compile the project's .scss files.
 
-Ensure a recent version of node.js is present (at least LTS), and run `npm install` in the project root.
+Ensure a recent version of node.js is present (at least LTS), and run `npm
+install` in the project root.
 
 After dependencies installed, the following npm scripts may be used:
 
@@ -54,3 +61,7 @@ After dependencies installed, the following npm scripts may be used:
 - `npm run prepublish:css-minify` to minify the contents of `css/`
 - `npm run test:scss` to watch file changes and automatically rebuild
 - `npm run build` to build .scss and minify, in one go.
+
+You can also use your preferred package manager if you wish, such as `yarn` or
+`pnpm`! However, be warned that commands might differ. Refer to your package
+manager's help page if necessary.
