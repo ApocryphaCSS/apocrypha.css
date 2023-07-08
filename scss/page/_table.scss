@@ -1,12 +1,12 @@
 table {
-  border: thin solid $accent-primary;
-  border-radius: $corner-radius;
+  border: thin solid var(--accent-primary);
+  border-radius: var(--corner-radius);
   border-spacing: 0;
   margin: 1rem;
 }
 
 thead {
-  background: $background-tertiary;
+  background: var(--background-tertiary);
 }
 
 td,
@@ -15,9 +15,27 @@ th {
 }
 
 tbody > tr:nth-child(2n + 1) {
-  background: $background-secondary;
+  background: var(--background-secondary);
 }
 
 tbody > tr:nth-child(2n) {
-  background: $background-tertiary;
+  background: var(--background-tertiary);
+}
+
+// Chrome fixes
+
+th:first-of-type {
+  border-top-left-radius: var(--corner-radius);
+}
+
+th:last-of-type {
+  border-top-right-radius: var(--corner-radius);
+}
+
+tr:last-of-type > td:first-child {
+  border-bottom-left-radius: var(--corner-radius);
+}
+
+tr:last-of-type > td:last-child {
+  border-bottom-right-radius: var(--corner-radius);
 }
