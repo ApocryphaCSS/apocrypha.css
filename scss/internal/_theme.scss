@@ -10,12 +10,14 @@ $red: #fd9696 !default;
 $red-bold: #c33b23 !default;
 $green: #c0faa7 !default;
 $yellow: #f9f99a !default;
-$blue: #a6f8ff !default;
+$blue: #92c9ff !default;
+$magenta: #daabda !default;
+$cyan: #a6f8ff !default;
 
 $accent-primary: $red !default;
 $accent-secondary: $yellow !default;
 $accent-success: $green !default;
-$accent-note: $blue !default;
+$accent-note: $cyan !default;
 $accent-warn: $yellow !default;
 $accent-error: $red-bold !default;
 
@@ -47,7 +49,11 @@ $corner-radius: 0.5rem !default;
   --link-color: #{$link-color};
 
   @if $link-color-hover == unset {
-    --link-color-hover: #{color.scale($link-color, $lightness: 75%, $saturation: -25%)};
+    --link-color-hover: #{color.scale(
+        $link-color,
+        $lightness: 75%,
+        $saturation: -25%
+      )};
   } @else {
     --link-color-hover: #{$link-color-hover};
   }

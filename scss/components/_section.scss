@@ -10,6 +10,12 @@ section.note {
   border: thin solid var(--accent-note);
 }
 
+section.success {
+  @include doc-section;
+  background: var(--accent-success-bg);
+  border: thin solid var(--accent-success);
+}
+
 section.warning {
   @include doc-section;
   background: var(--accent-warn-bg);
