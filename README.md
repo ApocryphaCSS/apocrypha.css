@@ -46,6 +46,8 @@ apocrypha.css uses the [`sass`](https://www.npmjs.com/package/sass) package to c
 
 Ensure a recent version of node.js is present (at least LTS), and run `npm install` in the project root.
 
-After dependencies installed, `npm run prepare:scss` will build all .scss files and output them to `css/`.
+After dependencies installed, the following npm scripts may be used:
 
-To watch file changes and automatically recompile, use `npm run test:scss`.
+- `npm run prepare:scss` to build all .scss files and output to `css/`.
+- `npm run prepublish:css-minify` to minify the contents of `css/`
+- `npm run test:scss` to watch file changes and automatically rebuild
