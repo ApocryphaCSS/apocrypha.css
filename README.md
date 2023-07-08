@@ -51,3 +51,4 @@ After dependencies installed, the following npm scripts may be used:
 - `npm run prepare:scss` to build all .scss files and output to `css/`.
 - `npm run prepublish:css-minify` to minify the contents of `css/`
 - `npm run test:scss` to watch file changes and automatically rebuild
+- `npm run build` to build .scss and minify, in one go.
