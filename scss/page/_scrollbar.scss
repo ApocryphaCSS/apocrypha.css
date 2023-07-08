@@ -1,0 +1,20 @@
+/**
+ * Styles the scrollbar for firefox and other browsers that utilize the webkit
+ * rendering engine.
+ */
+
+* {
+  scrollbar-color: var(--accent-primary) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: var(--corner-radius);
+}
