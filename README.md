@@ -1,6 +1,6 @@
 # apocrypha.css🍷
 
-![GitHub](https://img.shields.io/gitlab/license/BraveeSnow%2Fapocrypha.css?color=ff69b4&style=flat-square&logo=gnu)
+![GitHub](https://img.shields.io/github/license/ApocryphaCSS/apocrypha.css?color=fd9696&style=flat-square&logo=gnu)
 
 Just want to write HTML? Or maybe you really don't want to touch too much CSS?
 Does a futuristic themed stylesheet suit your website?
