@@ -28,9 +28,10 @@ Wanna try out apocrypha.css? No need for using any package manager, you can
 link it in your HTML `<head>` block like so:
 
 ```html
+
 <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@apocrypha/core/css/apocrypha.min.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@apocrypha/core/css/apocrypha.min.css"
 />
 ```
 
@@ -38,3 +39,13 @@ If you want to use apocrypha.css in your project, it is available to you on the
 npm repository. Run the command below to add it to your project:
 
 `npm install -D @apocrypha/core`
+
+## Manual Compilation
+
+apocrypha.css uses the [`sass`](https://www.npmjs.com/package/sass) package to compile the project's .scss files.
+
+Ensure a recent version of node.js is present (at least LTS), and run `npm install` in the project root.
+
+After dependencies installed, `npm run prepare:scss` will build all .scss files and output them to `css/`.
+
+To watch file changes and automatically recompile, use `npm run test:scss`.
