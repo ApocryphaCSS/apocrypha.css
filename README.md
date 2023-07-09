@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/ApocryphaCSS/apocrypha.css?color=fd9696&style=flat-square&logo=gnu)
 
 Just want to write HTML? Or maybe you really don't want to touch too much CSS?
-Does a futuristic themed stylesheet suit your website?
+Would you rather want a modular framework so you can pick and choose?
 
 Look no further. Try out apocrypha.css! A classless CSS framework with modular
 SCSS so you can tweak as you see fit. Sometimes, it's not enough to be
