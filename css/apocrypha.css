@@ -27,7 +27,7 @@
 }
 
 /**
- * Contains styling for inline tags as defined in the following section:
+ * Contains styling for form tags as defined in the following section:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element#forms
  */
 button {
@@ -43,6 +43,16 @@ button {
 button:hover {
   background-color: var(--accent-primary);
   color: var(--background);
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+fieldset:not(:last-of-type) {
+  border-bottom: thin solid var(--accent-secondary);
 }
 
 form {
@@ -98,6 +108,7 @@ select {
   border: thin solid var(--accent-primary);
   border-radius: var(--corner-radius);
   color: var(--foreground);
+  display: block;
   font: inherit;
   margin: 0.5rem;
   padding: 0.5rem;
