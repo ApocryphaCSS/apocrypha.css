@@ -3,7 +3,9 @@
 // Common styles
 @import "page/forms";
 @import "page/inline";
+@import "page/scrollbar";
 @import "page/sectioning";
+@import "page/table";
 @import "page/text";
 
 // Layout styles
@@ -15,4 +17,5 @@
 
 // Class component styles
 @import "components/navbar";
+@import "components/oneline";
 @import "components/section";
